@@ -1,0 +1,138 @@
+cse@cse-OptiPlex-3020:~$ git --version
+git version 2.34.1
+cse@cse-OptiPlex-3020:~$ mkdir cse;
+cse@cse-OptiPlex-3020:~$ cd cse;
+cse@cse-OptiPlex-3020:~/cse$  git init;
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/cse/cse/.git/
+cse@cse-OptiPlex-3020:~/cse$ git status;
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	first.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+cse@cse-OptiPlex-3020:~/cse$ git config  --global user.name "pooja"
+cse@cse-OptiPlex-3020:~/cse$ git config  --global user.email "ppojamali0402@gmail.com"
+cse@cse-OptiPlex-3020:~/cse$ git add .
+cse@cse-OptiPlex-3020:~/cse$ git config  --global user.email "poojamali0402@gmail.com"
+cse@cse-OptiPlex-3020:~/cse$ git add .
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   first.html
+
+cse@cse-OptiPlex-3020:~/cse$ git commit -m "wel"
+[master (root-commit) bcfc85c] wel
+ 1 file changed, 8 insertions(+)
+ create mode 100644 first.html
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+nothing to commit, working tree clean
+cse@cse-OptiPlex-3020:~/cse$ git log
+commit bcfc85caae61af385dcc83fc9954473e57f94438 (HEAD -> master)
+Author: pooja <poojamali0402@gmail.com>
+Date:   Tue Jul 23 12:37:27 2024 +0530
+
+    wel
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	second.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+cse@cse-OptiPlex-3020:~/cse$ ^C
+cse@cse-OptiPlex-3020:~/cse$ git config  --global user.name "pvm"
+cse@cse-OptiPlex-3020:~/cse$ git config  --global user.email "pm0402@gmail.com"
+cse@cse-OptiPlex-3020:~/cse$ git add  .
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   second.html
+
+cse@cse-OptiPlex-3020:~/cse$ git commit -m "p1"
+[master 4038689] p1
+ 1 file changed, 8 insertions(+)
+ create mode 100644 second.html
+cse@cse-OptiPlex-3020:~/cse$ git log
+commit 4038689a0c8a9a17ecdf055f77049fe78b5d5a64 (HEAD -> master)
+Author: pvm <pm0402@gmail.com>
+Date:   Tue Jul 23 12:44:01 2024 +0530
+
+    p1
+
+commit bcfc85caae61af385dcc83fc9954473e57f94438
+Author: pooja <poojamali0402@gmail.com>
+Date:   Tue Jul 23 12:37:27 2024 +0530
+
+    wel
+cse@cse-OptiPlex-3020:~/cse$ ^C
+cse@cse-OptiPlex-3020:~/cse$ ^C
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+nothing to commit, working tree clean
+cse@cse-OptiPlex-3020:~/cse$ git add  .
+cse@cse-OptiPlex-3020:~/cse$ git commit -m "p2
+> git commit -m "p2"
+> 
+> ^C
+cse@cse-OptiPlex-3020:~/cse$ git commit -m "p2"
+[master 5b03e1d] p2
+ 1 file changed, 1 insertion(+)
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+nothing to commit, working tree clean
+cse@cse-OptiPlex-3020:~/cse$ git add .
+cse@cse-OptiPlex-3020:~/cse$ git commit -m "p3"
+On branch master
+nothing to commit, working tree clean
+cse@cse-OptiPlex-3020:~/cse$ git add .
+cse@cse-OptiPlex-3020:~/cse$ git commit -m "p3"
+[master 4cf7e36] p3
+ 1 file changed, 1 insertion(+)
+cse@cse-OptiPlex-3020:~/cse$ git add .
+cse@cse-OptiPlex-3020:~/cse$ git commit -m "p4"
+[master eed1a6a] p4
+ 1 file changed, 1 insertion(+)
+cse@cse-OptiPlex-3020:~/cse$ git status
+On branch master
+nothing to commit, working tree clean
+cse@cse-OptiPlex-3020:~/cse$ 
+
+
